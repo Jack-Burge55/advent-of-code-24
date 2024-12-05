@@ -2,7 +2,6 @@ const fs = require("fs");
 let data;
 
 try {
-  // get data in 140x140 array x array
   data = fs.readFileSync("input.txt", "utf8").split("\r\n");
 } catch (err) {
   console.error("Error reading the file:", err);
