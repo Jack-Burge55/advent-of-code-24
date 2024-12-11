@@ -7,7 +7,7 @@ try {
   console.log("Error reading the file:", err);
 }
 
-let blinkCount = 24;
+let blinkCount = 25;
 
 const blink = (stones) => {
   let newStones = [];
