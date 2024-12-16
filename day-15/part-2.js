@@ -133,7 +133,7 @@ grid.forEach((row, i) => {
     }
   });
 });
-// // just for fun
+// just for fun
 fs.writeFileSync("endGrid", grid.join("\n"));
 console.log(runningTotal);
 // 1432898
