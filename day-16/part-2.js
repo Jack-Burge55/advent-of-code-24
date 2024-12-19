@@ -49,12 +49,10 @@ const validAndCheaperTile = (tile, cost, pathArray) => {
   );
 };
 
-// in heads we store the coords, the current cost and the direction faced
+// in heads we store the coords, the current cost, the direction faced and an array of visited tiles
 heads.push([start, 0, "e", [`${start[0]},${start[1]}`]]);
 tilesMap.set(`${start[0]},${start[1]}`, 0);
-counter = 0;
 while (heads.length > 0) {
-  counter++;
   const newHeads = [];
   heads.forEach((head) => {
     // e.g. [ [ 13, 1 ], 0, 'e', [array of tiles contained in path] ]
